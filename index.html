@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home">
+      <img src="img/IMG-20250408-WA0039.jpg.jpeg" />
+      <h1>Hello, I'm <span id="auto-name"></span></h1>
+      <p>
+        I’m a Frontend Web Developer passionate about creating beautiful,
+        responsive, and user-friendly websites.
+      </p>
+      <button
+        class="btn"
+        onclick="document.getElementById('contact').scrollIntoView()"
+      >
+        Hire Me
+      </button>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="sec-title">About Me</h2>
+      <div class="about">
+        <p>
+          I am a front-end developer skilled in HTML, CSS, JavaScript, and
+          UI/UX. I build responsive and high-quality web experiences that work
+          seamlessly across all devices.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="sec-title">Skills</h2>
+
+      <div class="skills-box">
+        <div class="skill">HTML<br /><img src="img/html.png" /></div>
+        <div class="skill">CSS<br /><img src="img/css (1).png" /></div>
+        <div class="skill">
+          JavaScript<br /><img src="img/java-script.png" />
+        </div>
+        <div class="skill">
+          React (optional)<br /><img src="img/science.png" />
+        </div>
+        <div class="skill">
+          UI/UX<br /><img src="img/user-experience.png" />
+        </div>
+        <div class="skill">
+          Responsive Design<br /><img src="img/responsive.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="sec-title">Projects</h2>
+
+      <div class="projects">
+        <div class="project">
+          <img src="https://via.placeholder.com/350x200" alt="" />
+          <h3>Project 1</h3>
+          <p>A cool project description goes here.</p>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/350x200" alt="" />
+          <h3>Project 2</h3>
+          <p>Another amazing project you built.</p>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/350x200" alt="" />
+          <h3>Project 3</h3>
+          <p>A great project showing your skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="sec-title">Contact Me</h2>
+
+      <div class="contact-box">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Email" />
+
+        <div style="position: relative">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password (min 6 letters)"
+            style="width: 100%"
+          />
+
+          <button
+            id="showPass"
+            style="
+              background: transparent;
+              border: none;
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              padding: 5px 10px;
+              cursor: pointer;
+            "
+          >
+            <img
+              id="passIcon"
+              src="img/not-visible.png"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+        </div>
+
+        <textarea id="msg" rows="4" placeholder="Message"></textarea>
+
+        <p
+          id="error"
+          style="color: #ff4444; font-size: 14px; display: none"
+        ></p>
+
+        <button class="btn" id="sendBtn">Send Message</button>
+      </div>
+    </section>
+
+    <footer>© 2024 Your Name — Frontend Developer Portfolio</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

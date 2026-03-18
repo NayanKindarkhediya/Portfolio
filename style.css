@@ -1,0 +1,191 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0f0f0f;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: #151515;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav h1 {
+        font-size: 28px;
+        color: #00eaff;
+      }
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #00eaff;
+      }
+
+      header {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+      header img {
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        box-shadow: 0 0px 6px rgb(0 234 255);
+      }
+      header h1 {
+        font-size: 50px;
+      }
+      header h1 span {
+        color: #00eaff;
+      }
+      header p {
+        max-width: 650px;
+        margin: 20px auto;
+      }
+      #auto-name {
+        color: #00eaff;
+        border-right: 2px solid #00eaff;
+        padding-right: 5px;
+        animation: blink 0.7s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #00eaff;
+        }
+        100% {
+          border-color: transparent;
+        }
+      }
+      .btn {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #00eaff;
+        border: none;
+        border-radius: 30px;
+        color: #000;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background: #00bcd4;
+      }
+
+      section {
+        padding: 60px 80px;
+      }
+
+      .sec-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #00eaff;
+      }
+
+      /* About Section */
+      .about {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      /* Skills */
+      .skills-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+      .skills-box img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+      }
+      .skill {
+        background: #151515;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        border: 2px solid #222;
+        transition: 0.3s;
+      }
+      .skill:hover {
+        border-color: #00eaff;
+      }
+
+      /* Projects */
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+      .project {
+        background: #151515;
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px solid #222;
+        transition: 0.3s;
+      }
+      .project:hover {
+        border-color: #00eaff;
+      }
+      .project img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Contact */
+      .contact-box {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .contact-box input,
+      .contact-box textarea {
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background: #222;
+        color: #fff;
+      }
+      footer {
+        padding: 20px;
+        background: #111;
+        text-align: center;
+        color: #888;
+      }
